@@ -1,0 +1,28 @@
+---
+import HeroImage from "./HeroImage.astro";
+---
+
+<div class="container mx-auto max-w-5xl">
+  <section class="flex flex-col md:flex-row p-8 justify-between">
+    <div class="flex flex-col max-w-lg gap-4">
+      <div class="flex bg-zinc-100 w-fit rounded-full font-semibold items-center gap-2">
+        <span class="px-2 text-sm"> Let give it a shot!!</span>
+        <button class="bg-zinc-900 p-1 rounded-full"
+          ><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24"
+            ><path
+              class="fill-white"
+              d="m18.09 11.77l1.47 6.33L14 14.74L8.44 18.1l1.46-6.33L5 7.5l6.47-.54L14 1l2.53 5.96L23 7.5l-4.91 4.27M2 12.43c.19 0 .38-.06.55-.17l3.2-2.11l-1.57-1.36l-2.73 1.8c-.461.3-.589.91-.29 1.41c.2.27.52.43.84.43m-.84 9.12c.2.29.52.45.84.45c.19 0 .38-.05.55-.16l4.11-2.71l.34-1.37l.31-1.45l-5.86 3.85c-.461.31-.589.93-.29 1.39m.29-6.17a1 1 0 0 0-.29 1.38c.2.3.52.45.84.45c.19 0 .38-.05.55-.16l5.42-3.55l.27-1.19l-.92-.81l-5.87 3.88Z"
+            ></path></svg
+          ></button
+        >
+      </div>
+      <h1 class="text-5xl font-bold">Nothing is Worthless for a Try.</h1>
+      <span> Just try and you will get improvement, failing is better then never try.</span>
+      <div class="flex max-w-sm gap-2">
+        <button class="flex-1 bg-zinc-900 hover:bg-zinc-900/80 text-white rounded shadow px-4 py-2">Try Now!!!</button>
+        <button class="flex-1 bg-zinc-900 hover:bg-zinc-900/80 text-white rounded shadow px-4 py-2">Try Soon</button>
+      </div>
+    </div>
+    <HeroImage />
+  </section>
+</div>

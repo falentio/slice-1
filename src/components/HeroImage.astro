@@ -1,0 +1,18 @@
+---
+import Vector from "./Vector.astro";
+---
+
+<div class="flex flex-col justify-center py-12">
+  <Vector />
+</div>
+
+<style lang="postcss">
+  div {
+    background-image: radial-gradient(circle, #3b82f6, #3b82f6 7rem, transparent 7rem),
+      radial-gradient(circle, #60a5fa, #60a5fa 8rem, transparent 8rem),
+      radial-gradient(circle, #7dd3fc, #7dd3fc 9rem, transparent 9rem);
+  }
+  div > :global(svg) {
+    @apply h-72;
+  }
+</style>

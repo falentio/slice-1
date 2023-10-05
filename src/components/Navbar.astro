@@ -1,0 +1,22 @@
+---
+import Button from "./Button.astro";
+import Menu from "./Menu.astro";
+---
+
+<header class="display flex items-center justify-between gap-2 shadow h-14 p-2">
+  <a href="/" class="flex-1 font-bold text-xl sm:text-3xl flex flex-row items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue" viewBox="0 0 24 24"
+      ><path
+        class="fill-blue-500"
+        d="M13 13h5v2h-5m0-6h5v2h-5M6.91 7.41L11.5 12l-4.59 4.6l-1.41-1.42L8.68 12L5.5 8.82M5 3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5Z"
+      ></path></svg
+    >
+    <span>Landing</span>
+  </a>
+  <nav class="flex-auto flex items-center justify-center gap-4 font-semibold max-sm:hidden">
+    <Menu />
+  </nav>
+  <div class="flex-1 flex flex-row justify-end max-sm:hidden">
+    <Button>Download App</Button>
+  </div>
+</header>
