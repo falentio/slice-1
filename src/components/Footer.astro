@@ -1,0 +1,28 @@
+---
+import Menu from "./Menu.astro";
+---
+
+<div class="bg-zinc-900 text-white p-8">
+  <footer class="max-w-5xl mx-auto w-full flex flex-row flex-wrap gap-8 justify-center">
+    <span class="font-bold text-7xl w-max text-center max-sm:mx-auto px-12">Try It.</span>
+    <div class="flex flex-row flex-wrap gap-4 max-sm:mx-auto">
+      <div class="flex flex-col">
+        <span class="font-bold text-lg"> Navigation</span>
+        <Menu />
+      </div>
+      <div class="flex flex-col">
+        <span class="font-bold text-lg"> Contact</span>
+        <a href="#">Email</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+    <span class="w-full text-lg text-center"> Copyright 2023 &copy; Kevin Falentio</span>
+  </footer>
+</div>
+
+<style lang="postcss">
+    div > :global(a) {
+        @apply text-sm
+    }
+</style>
