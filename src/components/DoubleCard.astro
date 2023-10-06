@@ -1,24 +1,28 @@
-<div class="flex flex-col md:flex-row text-zinc-950 container max-w-5xl mx-auto gap-4 p-8">
-  <section class="bg-sky-400 px-8 py-4 rounded-xl shadow flex flex-col gap-2 flex-1">
-    <span class="bg-white rounded-full text-sm px-2 py-1 font-medium w-fit">lorem</span>
-    <div class="flex flex-row items-center justify-between">
-      <h2 class="font-bold text-2xl">Lorem Ipsum</h2>
-      <button class="rounded-lg bg-zinc-950 text-sky-400 px-4 py-2">Go</button>
-    </div>
+---
+import Card from "./Card.astro";
+---
+
+<div class="flex flex-col md:flex-row flex-wrap text-zinc-950 container max-w-5xl mx-auto gap-4 p-8">
+  <Card class="bg-blue-400" subTitle="lorem ipsum" title="Laborum qui mollit">
     <p class="max-w-xs">
       Labore officia duis exercitation officia est ut aute consequat.Commodo aliqua exercitation sit dolor qui duis ut
       id elit ex fugiat irure veniam.
     </p>
-  </section>
-  <section class="bg-green-400 px-8 py-4 rounded-xl shadow flex flex-col gap-2 flex-1">
-    <span class="bg-white rounded-full text-sm px-2 py-1 font-medium w-fit">lorem</span>
-    <div class="flex flex-row items-center justify-between">
-      <h2 class="font-bold text-2xl">Lorem Ipsum</h2>
-      <button class="rounded-lg bg-zinc-950 text-green-400 px-4 py-2">Go</button>
-    </div>
+  </Card>
+  <Card class="bg-green-400" subTitle="lorem ipsum" title="Laborum qui mollit">
     <p class="max-w-xs">
-      Do eu est consectetur consequat quis ad commodo et laborum commodo.Occaecat ut id cupidatat quis officia consequat
-      est nisi commodo reprehenderit voluptate esse.
+      Ea consectetur proident id enim sint labore ullamco consequat ut officia quis.Irure eu voluptate minim nostrud
+      cillum non qui est Lorem pariatur ipsum.
     </p>
-  </section>
+  </Card>
+  <Card class="bg-red-400" subTitle="lorem ipsum" title="Laborum qui mollit">
+    <p class="max-w-xs">
+      Reprehenderit labore ex proident tempor commodo commodo sunt deserunt ex culpa sit.Velit elit aliquip id quis.
+    </p>
+  </Card>
+  <Card class="bg-yellow-400" subTitle="lorem ipsum" title="Laborum qui mollit">
+    <p class="max-w-xs">
+      Et elit ullamco laborum Lorem anim ad Lorem.Non sunt ex veniam eiusmod elit consequat anim tempor eu enim ad.
+    </p>
+  </Card>
 </div>
